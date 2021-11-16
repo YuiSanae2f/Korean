@@ -5,7 +5,7 @@
 
 char a[999999] = "\0"; //search
 char search[999999]; //search2
-char choose[3];
+char choose[7];
 int i;
 
 char google[999999] = "https://www.google.co.kr/search?q=";
@@ -20,16 +20,19 @@ int main(){
 	repeat:
 	system("cls");	
 	
-//	char search[999999] = { 0, };
 	char a[999999] = { 0, };
+	char choose[7] = { 0, };
+
 
 	system("title 서치 엔진...? by юи сан аэ2ф");
 	printf("Input: ");
 	scanf("%s",&a[0]);
 	system("cls");
 	
+	
 	printf("Output: %s\n\nA.naver\nB.google\nC.daum\nD.youtube\nE.nikoniko\nF.yahoo\nG.safari\nH.END\n\nChoose: ",&a[0]);
 	scanf("%s",&choose[0]);
+	
 	
 	for(int i=0;i<7;i++){
 		char search[999999] = { 0, };
@@ -81,6 +84,7 @@ int main(){
 		printf("END");
 		system("exit");
 }
+
 
 
 
